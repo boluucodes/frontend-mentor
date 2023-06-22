@@ -1,0 +1,200 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color:  hsl(0, 0%, 100%);
+    display: flex;
+    border: 2px solid white;
+    border-radius: 12px;
+    width: 50%;
+    box-shadow: 0 3px 4px 1px hsl(221, 100%, 96%);
+}
+.bluecard{
+    margin-left: 0;
+    padding: 8px 2px;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    border: hidden;
+    border-radius: 15px;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+.start{
+    color:  hsl(241, 100%, 89%);
+    margin: 1rem auto 2rem auto;
+    font-family:'Hanken Grotesk', sans-serif;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin: 1.2rem auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.great{
+    color: white;
+    margin: 1.2rem auto;
+    padding: 1rem 0 3px 0;
+    text-align: center;
+    font-family:'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+.remark { 
+    width: 100%;
+    color: white;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 0 auto 2rem auto;
+    font-size: 16px;
+    font-family:'Hanken Grotesk', sans-serif;
+}
+#score{
+    font-size: 3.5rem;
+    color: white;
+}
+.seventy p{
+    color:  hsl(241, 100%, 89%);
+    font-family:'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+.whitecard{
+    padding: 8px 3px;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 5px auto;
+}
+.sum{
+    margin-left: 1rem;
+    margin-top: 5px;
+    padding: 2px;
+    font-weight: 400;
+    font-family:'Hanken Grotesk', sans-serif;
+}
+.grades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2px;
+    padding-right: 2rem;
+    margin: 1rem;
+    
+}
+.react{
+    margin: .5rem 3px;
+    font-family:'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: hidden;
+    border-radius: 10px;
+    background-color: hsla(0, 100%, 67%,.1);
+
+}
+.first{
+    padding: 2px;
+    display: flex;
+    font-family:'Hanken Grotesk', sans-serif;
+    gap: 12px;
+    font-size: 16px;
+}
+.second span{
+    font-weight: 800;
+}
+.memory{
+    margin: .5rem 3px;
+    font-family:'Hanken Grotesk', sans-serif;
+    padding: 1rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: hidden;
+    border-radius: 10px;
+    background-color: hsla(39, 100%, 56%, .1);
+}
+.verbal{
+    margin: .5rem 3px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    align-items: center;
+    font-family:'Hanken Grotesk', sans-serif;
+    border: hidden;
+    border-radius: 10px;
+    background-color: hsla(166, 100%, 37%, .1);
+}
+.visual{
+    margin: .5rem 3px;
+    font-family:'Hanken Grotesk', sans-serif;
+    padding: 1rem;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: hidden;
+    border-radius: 10px;
+    background-color: hsla(234, 85%, 45%, .1);
+}
+button{
+    padding: 1rem;
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    border: hidden;
+    border-radius: 30px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    font-family:'Hanken Grotesk', sans-serif;
+}
+.button{
+    width: 100%;
+    margin: 1.5rem 5px .5rem 5px;
+    padding: 2px 5px;
+}
+@media screen and (max-width:500px) {
+    .container{
+        flex-direction: column;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .bluecard{
+        width: 100%;
+    }
+
+    .whitecard{
+        width: 100%;
+    }
+
+    .circle{
+        margin: 0 auto;
+    }
+    
+}
+
+
+
