@@ -169,11 +169,28 @@ button{
     font-weight: 400;
     font-family:'Hanken Grotesk', sans-serif;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 .button{
     width: 100%;
     margin: 1.5rem 5px .5rem 5px;
     padding: 2px 5px;
 }
+#red{
+    color:  hsl(0, 100%, 67%);
+}
+#yellow{
+    color:  hsl(39, 100%, 56%);
+}
+#green{
+    color: hsl(166, 100%, 37%);
+}
+#none{
+    color: hsl(234, 85%, 45%);
+}
+
 @media screen and (max-width:500px) {
     .container{
         flex-direction: column;
