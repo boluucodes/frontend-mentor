@@ -30,14 +30,14 @@ main{
     border-radius: 2.5%;
 }
 .text-container h2{
-    width: 95%;
+    width: 85%;
     font-weight: 700;
     /* padding: 2%; */
     color: hsl(218, 44%, 22%);
     margin: 5% auto;
 }
 .text-container p{
-    width: 93%;
+    width: 90%;
     font-weight: 400;
     margin: 1% auto 8.5% auto;
     color:  hsl(220, 15%, 55%);
