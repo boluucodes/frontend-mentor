@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    background-color:  hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.image-container{
+    width: 30%;
+    /* height: 800px; */
+    /* background-color: rebeccapurple; */
+}
+.image-container img{
+    border-top-left-radius: 15px;
+    /* width: 100%; */
+    border-bottom-left-radius: 15px; 
+}
+.first-container{
+    /* width: 33%; */
+}
+.mobile-image{
+    display: none;
+}
+.second-container{
+    border: solid 1px white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+    padding: 3% 5% 2% 3%;
+    width: 30%;
+}
+.second-container h1{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 6%;
+    margin-top: 10%;
+    letter-spacing: 3px;
+}
+.second-container h2{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    width: 85%;
+    padding-bottom: 7%;
+}
+.second-container p{
+    color: hsl(228, 12%, 48%);
+    width: 80%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 2% 3% 3% 0;
+    margin-bottom: 7%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.cart-content{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 70%;
+    gap: 10%;
+    padding: 1% 2% 15% 2%;
+}
+.cart-content h3:first-child{
+    color:  hsl(158, 36%, 37%);
+    font-size: 3rem;
+}
+.cart-content h3:last-child{
+    color:  hsl(228, 12%, 48%);
+    font-size: 1.2rem;
+}
+button{
+    color: white;
+    background-color:  hsl(158, 36%, 37%);
+    padding: 1rem 5rem;
+    border: solid 1px  hsl(158, 36%, 37%);
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+span{
+    margin-right: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .image-container{
+        display: none;
+    }
+    .mobile-image{
+        display: block;
+        background-color: white;
+        width: 80vw;
+    }
+    
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        margin: 5rem auto;
+    }
+    .second-container{
+        width: 80vw;
+        padding-left: 2rem;
+        margin: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+    .second-container h1{
+        width: 100%;
+    }
+    .second-container p{
+        width: 80%;
+    }
+    .cart-content{
+        width: 80%;
+    }
+    button{
+        margin-bottom: 5%;
+        padding: 1rem 6rem;
+    }
+}
+@media screen and (max-width:375px){
+    button{
+        padding: 1rem 2rem;
+    }
+    .cart-content h3:first-child{
+        font-size: 2rem;
+    }
+}
