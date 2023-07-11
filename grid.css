@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+/* the grid items should be in the container */
+main{
+    display: grid;
+    margin: 5%;
+    width: 100%;
+    gap: 0;
+    grid-template-columns: repeat(2,1fr); 
+    grid-template-rows: repeat(2,1fr);
+}
+/* repeat: number of repeats,value */
+/* span:to place grids */
+.top-grid{
+    grid-column: span 2;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: white;
+    padding: 2rem 2rem .5rem 2rem;
+}
+.top-grid h1{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 4%;
+    margin-top: 5%;
+    padding-right: 5%;
+    font-family: 'Karla', sans-serif;
+    width: 90%;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+.top-grid h2{
+    color: hsl(71, 73%, 54%);
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 2%;
+}
+.top-grid p{
+    color:  hsl(218, 22%, 67%);
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 2rem;
+    letter-spacing: .5px;
+    padding-bottom: 1%;
+}
+.top-grid p:last-child{
+    margin-bottom: 5%;
+}
+.last{
+    background-color: hsla(179, 62%, 43%,.5);
+    border: hidden;
+    padding: 1rem 2.5rem;
+    border-bottom-right-radius: 1rem;
+    height: 100%;
+}
+.last h3{
+    margin: 8% 0;
+    padding-bottom: 1%;
+    color:  white;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: hsla(71, 73%, 54%,.4);
+    border: 1px solid hsl(71, 73%, 54%);
+}
+.first{
+    padding: 1rem 2.5rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 2rem;
+    border-bottom-left-radius: 1rem;
+    letter-spacing: .5px;
+    padding-bottom: 1%;
+    background-color: hsl(179, 62%, 43%);
+}
+.first h3{
+    color: white;
+    margin-top: 7%;
+    padding-bottom: 7%;
+}
+.first span{
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+    margin-right: 3%;
+}
+.first p:first-of-type{
+    color:  hsl(204, 43%, 93%);
+}
+.first p:last-of-type{
+    color:  hsl(204, 43%, 93%);
+    width: 100%;
+    margin-bottom: 15%;
+}
+button{
+    cursor: pointer;
+    background-color: hsl(71, 73%, 54%);
+    padding: 2rem;
+    width: 90%;
+    margin-bottom: 15%;
+    border-radius: 10px;
+    border: solid 1px hsl(71, 73%, 54%);
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.last ul{
+    list-style: none;
+    color: hsl(204, 43%, 93%);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-bottom: 1.35rem;
+}
+.last ul li{
+    padding: .5rem 0;
+}
+
+    /* responsiveness */
+@media screen and (max-width:768px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottom-grid{
+        width: 100%;
+    }   
+    .first{
+        border-bottom-left-radius: 0;
+    } 
+    .last ul li{
+        font-size: 2rem;
+    }
+    .last-box{
+        width: 100%;
+    }
+    .last{
+        border-bottom-left-radius: 1rem;
+    }
+    .top-grid{
+        width: 100%;
+    }
+    .top-grid h1{
+        font-size: 3rem;
+    }
+    .top-grid h1,h2{
+        margin-bottom: 5%;
+    }
+    .top-grid p{
+        padding: 2% 0;
+    }
+}
+
+
+
