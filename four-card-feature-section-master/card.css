@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 body{
     width: 100%;
@@ -46,7 +46,7 @@ header p{
 }
 main{
     display: grid;
-    margin: 4% 0;
+    margin: 4%;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(9,1fr);
     gap: 2rem;
@@ -85,16 +85,13 @@ main p{
 }
 .cyan-item{
     grid-area: 2/1/4/5;
-    margin-left: 5%;
     padding: 2rem;
     background-color: hsl(0, 0%, 98%);
     border-radius: .5rem;
     border-top: solid .5rem  hsl(180, 62%, 55%);
 }
 .blue-item{
-    grid-area: 2/9/4/12;
-    width: 120%;
-    margin-left: 5%;
+    grid-area: 2/9/4/13;
     padding: 2rem;
     background-color: hsl(0, 0%, 98%);
     border-radius: .5rem;
